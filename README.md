@@ -38,19 +38,24 @@ You need AWS CLI in the EC2 machine to give IAM user access
     aws --version
     
     ```
+    
 ### Step-5: Configure AWS
 Give IAM user to this machine (EC2). You need to create Access Key from User.
 
 **AWS CLI Configure**:
     ```bash
+    
     aws configure
+    
     ```
 Run this command then provide, Access key, Secret Key, Region of the IAM user.
 
 ### Step-6: Install eksctl
     ```bash
+    
     curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
 sudo mv /tmp/eksctl /usr/local/bin
 eksctl version
+
     ```
 
