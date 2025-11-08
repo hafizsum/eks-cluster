@@ -12,3 +12,11 @@ services
 
 ● AWS Region: Try to avoid N. Virginia or Ohio
 
+## Create Cluster with Eksctl:
+### Step-1:
+Create an EC2 instance (t2 micro sufficient) because this machine is not for cluster, it is
+to trigger the ekscluster
+### Step-2:
+Connect the machine in your terminal via SSH
+### Step-3:
+Create an IAM user and attach policy - Administrator (screenshot below)
