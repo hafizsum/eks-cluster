@@ -36,6 +36,7 @@ You need AWS CLI in the EC2 machine to give IAM user access
     sudo ./aws/install
     
     aws --version
+    
     ```
 ### Step-5: Configure AWS
 Give IAM user to this machine (EC2). You need to create Access Key from User.
