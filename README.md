@@ -40,6 +40,16 @@ You need AWS CLI in the EC2 machine to give IAM user access
     
     aws --version
     ```
+
+    ```bash
+    cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
+    overlay
+    br_netfilter
+    EOF
+
+    sudo modprobe overlay
+    sudo modprobe br_netfilter
+    ```
     
 ### Step-5: Configure AWS
 Give IAM user to this machine (EC2). You need to create Access Key from User.
