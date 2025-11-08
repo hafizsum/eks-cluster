@@ -29,26 +29,6 @@ You need AWS CLI in the EC2 machine to give IAM user access
 
     ```bash
     sudo apt update
-    
-    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
-    
-    sudo apt install unzip
-    
-    unzip awscliv2.zip
-    
-    sudo ./aws/install
-    
-    aws --version
-    ```
-
-    ```bash
-    cat <<EOF | sudo tee /etc/modules-load.d/k8s.conf
-    overlay
-    br_netfilter
-    EOF
-
-    sudo modprobe overlay
-    sudo modprobe br_netfilter
     ```
     
 ### Step-5: Configure AWS
