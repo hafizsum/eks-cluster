@@ -29,6 +29,7 @@ You need AWS CLI in the EC2 machine to give IAM user access
     ```bash
     sudo swapoff -a
     ```
+    
     ```bash
     sudo swapoff -a
     ```
