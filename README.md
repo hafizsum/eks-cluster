@@ -19,4 +19,12 @@ to trigger the ekscluster
 ### Step-2:
 Connect the machine in your terminal via SSH
 ### Step-3:
-Create an IAM user and attach policy - Administrator (screenshot below)
+Create an IAM user and attach policy - AdministratorAccess
+### Step-4:
+You need AWS CLI in the EC2 machine to give IAM user access
+
+1. **Download AWS CLI**:
+    ```bash
+    sudo apt update
+    curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+    ```
