@@ -26,14 +26,13 @@ Create an IAM user and attach policy - AdministratorAccess
 You need AWS CLI in the EC2 machine to give IAM user access
 
 **Download & Install AWS CLI**:
+
     ```bash
     sudo swapoff -a
     ```
-    
     ```bash
     sudo swapoff -a
     ```
-    
 ### Step-5: Configure AWS
 Give IAM user to this machine (EC2). You need to create Access Key from User.
 
