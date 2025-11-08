@@ -1,2 +1,3 @@
-# eks-cluster
-Deploy eks-cluster and deploy application.
+# Deploy Full Stack Application on AWS EKS
+
+Create Cluster with Eksctl:
