@@ -25,10 +25,9 @@ Create an IAM user and attach policy - AdministratorAccess
 ### Step-4:
 You need AWS CLI in the EC2 machine to give IAM user access
 
-**Download Install and Check AWS CLI**:
-
+1. **Disable Swap**: Required for Kubernetes to function correctly.
     ```bash
-    sudo apt update
+    sudo swapoff -a
     ```
     
 ### Step-5: Configure AWS
