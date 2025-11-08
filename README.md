@@ -25,33 +25,22 @@ Create an IAM user and attach policy - AdministratorAccess
 ### Step-4:
 You need AWS CLI in the EC2 machine to give IAM user access
 
-**System Update**:
+**Download & Install AWS CLI**:
     ```bash
     sudo apt update
     ```
-    
-**Download AWS CLI**:
-
     ```bash
     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
     ```
-    
-**Install Unzip package**:
     ```bash
     sudo apt install unzip
     ```
-    
-**Unzip AWS CLI downloaded file**:
     ```bash
     unzip awscliv2.zip
     ```
-    
-**Install AWS CLI**:
     ```bash
     sudo ./aws/install
     ```
-    
-**Check Verision**:
     ```bash
     aws --version
     ```
