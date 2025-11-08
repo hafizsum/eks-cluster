@@ -29,18 +29,23 @@ You need AWS CLI in the EC2 machine to give IAM user access
     ```bash
     sudo apt update
     ```
+    
     ```bash
     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
     ```
+    
     ```bash
     sudo apt install unzip
     ```
+    
     ```bash
     unzip awscliv2.zip
     ```
+    
     ```bash
     sudo ./aws/install
     ```
+    
     ```bash
     aws --version
     ```
