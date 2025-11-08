@@ -25,26 +25,27 @@ Create an IAM user and attach policy - AdministratorAccess
 ### Step-4:
 You need AWS CLI in the EC2 machine to give IAM user access
 
-1. **AWS CLI**: Download and Install AWS CLI.
+**System Update**:
     ```bash
     sudo apt update
     ```
-
+**Download AWS CLI**:
     ```bash
     curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
     ```
+**Install Unzip package**:
     ```bash
     sudo apt install unzip
     ```
-    
+**Unzip AWS CLI downloaded file**:
     ```bash
     unzip awscliv2.zip
     ```
-
+**Install AWS CLI**:
     ```bash
     sudo ./aws/install
     ```
-
+**Check Verision**:
     ```bash
     aws --version
     ```
@@ -54,18 +55,21 @@ Give IAM user to this machine (EC2). You need to create Access Key from User.
 
 **AWS CLI Configure**:
     ```bash
-    
     aws configure
-    
     ```
 Run this command then provide, Access key, Secret Key, Region of the IAM user.
 
-### Step-6: Install eksctl
+### Step-6: Install eksctl.
+
+**Download eksctl**:
     ```bash
-    
     curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmp
-sudo mv /tmp/eksctl /usr/local/bin
-eksctl version
-
     ```
-
+**Move to /bin**:
+    ```bash
+    sudo mv /tmp/eksctl /usr/local/bin
+    ```
+**Check eksctl Version**:
+    ```bash
+    eksctl version
+    ```
